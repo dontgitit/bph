@@ -1,0 +1,9 @@
+{{=TABLE(
+[
+TR([TD(field_name) for field_name, field_value in recent_eqs[0].iteritems()])
+] + 
+[
+TR([TD(field_value) for field_name, field_value in eq.iteritems()]) for eq in recent_eqs
+]
+)}}
+
